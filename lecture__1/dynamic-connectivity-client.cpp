@@ -6,13 +6,15 @@
  *      - if they are not yet connected, connect them and print out pair
  */
 
-#include <stdio.h>
+ #include <iostream>
+ using namespace std;
 
-int main(void) {
-    int a;
-    printf("Enter number for N:\n");
-    scanf("%d", &a);
-    printf("You entered: %d\n\n", a);
-
+int main ()
+{
+    int N;
+    cout << "Enter a number";
+    cin >> N; 
+    cout << "You entered " << N << endl;
     return 0;
-}
+
+ }
