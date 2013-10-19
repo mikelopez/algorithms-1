@@ -9,6 +9,7 @@ Union(x, y) will replace the value of array[x] with the value of array[y]
 
 
 .. code-block:: 
+
     int id[N]
     for (int i = 0; i < id.size(); i++) {
         id[i] = i;
