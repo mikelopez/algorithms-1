@@ -11,6 +11,7 @@ class QuickUnion:
             print "\t\t- n is not id[n] ( %s ) " % self.id[n]
             n = self.id[n]
             print "\t\t- n is now set to id[n] ( %s ) " % n
+        print "The ROOT is %s" % n
         return n
     
     def union(self, p, q):
