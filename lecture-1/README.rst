@@ -2,7 +2,7 @@ Sample in C++ Illustrating Dynamic Connectivity
 
 
 Performs a quick union by first creating an array with ``N`` elements with the value
-of the index number (x[0] = 0, x[1] = 1...etc)
+of the index number (``x[0] = 0, x[1] = 1...etc``)
 
 
 Union(x, y) will replace the value of array[x] with the value of array[y]
