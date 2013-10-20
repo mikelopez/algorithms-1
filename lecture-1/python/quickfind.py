@@ -3,7 +3,7 @@ Performing union on a list of integers.
 
 """
 MAX = 10
-class QuickUnion:
+class QuickFind:
     numbers = []
     def __init__(self):
         [getattr(self, 'numbers').append(x) for x in range(0, MAX)]
