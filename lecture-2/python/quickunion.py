@@ -6,20 +6,20 @@ class QuickUnion:
         [self.id.append(x) for x in range(0, 10)]
     
     def __root(self, n):
-        print "\t- Checking root for %s...."%n
-        while (n != self.id[n]):
-            print "\t\t- n is not id[n] ( %s ) " % self.id[n]
+        print "\t\t- Checking root for %s...."%n
+        while n != self.id[n]:
+            print "\t\t\t- n is not id[n] ( %s ) " % self.id[n]
             n = self.id[n]
-            print "\t\t- n is now set to id[n] ( %s ) " % n
-        print "The ROOT is %s" % n
+            print "\t\t\t- n is now set to id[n] ( %s ) " % n
+        print "\tThe ROOT is %s" % n
         return n
     
     def union(self, p, q):
         print "\n\nRUNNING UNION(%s, %s) " % (p, q)
+        print "\t- UNION() value of i becomes value of root(p)"
         i = self.__root(p)
-        print "- union() root(p) to i = %s" % i
         j = self.__root(q)
-        print "- union() root(q) to j = %s" % j
+        print "\t- UNION() value of i becomes value of root(q) %s" 
         self.id[i] = j
 
         print "set id[i] = j" 
