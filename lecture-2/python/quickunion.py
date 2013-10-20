@@ -6,11 +6,11 @@ class QuickUnion:
         [self.id.append(x) for x in range(0, 10)]
     
     def __root(self, n):
-        print "\t\t- Checking root for %s...."%n
+        print "\t\t- Checking root for %s...." % n
         while n != self.id[n]:
-            print "\t\t\t- n is not id[n] ( %s ) " % self.id[n]
+            print "\t\t\t- n(%s) is not id[n] ( %s ) " % (n, self.id[n])
             n = self.id[n]
-            print "\t\t\t- n is now set to id[n] ( %s ) " % n
+            print "\t\t\t- n(%s) is now set to id[n] ( %s ) " % (n, n)
         print "\tThe ROOT is %s" % n
         return n
     
@@ -18,7 +18,7 @@ class QuickUnion:
         print "\n\nRUNNING UNION(%s, %s) " % (p, q)
         print "\t- UNION() value of i becomes value of root(p)"
         i = self.__root(p)
-        print "\t- UNION() value of i becomes value of root(q) %s" 
+        print "\t- UNION() value of j becomes value of root(q) " 
         j = self.__root(q)
         self.id[i] = j
         print "-------------------------------"
@@ -34,22 +34,16 @@ class QuickUnion:
 
 if __name__ == "__main__":
     qu = QuickUnion()
-    qu.verbose()
-    qu.union(4, 3)
-    qu.verbose()
-    qu.union(3, 8)
-    qu.verbose()
-    qu.union(6, 5)
-    qu.verbose()
-    qu.union(9, 4)
-    qu.verbose()
-    qu.union(2, 1)
-    qu.verbose()
-    qu.union(5, 0)
-    qu.verbose()
-    qu.union(7, 2)
-    qu.verbose()
-    qu.union(6, 1)
-    qu.verbose()
-    qu.union(7, 3)
-    qu.verbose()
+    pairs = [[4, 3],
+             [3, 8],
+             [6, 5],
+             [9, 4],
+             [2, 1],
+             [5, 0],
+             [7, 2],
+             [6, 1],
+             [7, 3]]
+    for i in pairs:
+        qu.union(i[0], i[1])
+        qu.verbose()
+

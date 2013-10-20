@@ -47,12 +47,35 @@ void print_ids(int id[N]) {
     }
 };
 
+string askuser() {
+    string result;
+    cout << "What would you like to do?" << endl;
+    cin >> result;
+    return result;
+}
+
 int main() {
     QuickUnion qu;
     int *p;
     p = qu.get_id();
     cout << "Initial Array" << endl;
     print_ids(p);
+    string result;
+    result = askuser();
+    while (result != "quit") {
+        if (result == "union") {
+            cout << "Doing union..." << endl;
+            int ux, uy;
+            cout << "select number to union with: " << endl;
+            cin >> ux;
+            cout << "select number to " << ux << " with" << endl;
+            cin >> uy;
+            qu.custom_union(ux, uy);
+            p = qu.get_id();
+            print_ids(p);
+        }
+        result = askuser();
+    }
 
     return 0;
 }
