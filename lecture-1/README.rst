@@ -1,8 +1,9 @@
 Sample in C++ Illustrating Dynamic Connectivity
 
+Quick-Find:
 
-Performs a quick union by first creating an array with ``N`` elements with the value
-of the index number 
+Checks if ``p`` and ``q`` are connected by checking the index ``p`` and ``x`` in the array and 
+comparing the value. If they are equal, then they are connected.
 
 Union(x, y) will replace the value of array[x] with the value of array[y]
 
