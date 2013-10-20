@@ -21,6 +21,7 @@ class QuickUnion:
                 self.numbers[index] = qid
 
     def verbose(self):
+        print "Index \t Value"
         for i, data in enumerate(self.numbers):
             print "%s \t %s" % (i, data)
 
