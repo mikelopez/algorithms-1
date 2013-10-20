@@ -11,5 +11,7 @@ Each entry of the array will contain the reference to its parent root ID
   id[]   |   0   |   1   |   2   |   3   |   4   |   5   |   6   |   7   |
 
 
-Checks if ``p`` and ``q`` have the same root value
+Find: Checks if ``p`` and ``q`` have the same root value
 
+Union: To merge components containing p and q, set the id of p's root to 
+the id of q's
