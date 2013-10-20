@@ -24,6 +24,8 @@ Sample output in Python
 
 .. code-block:: 
 
+    BEFORE UNION
+    ------------
     Index   Root
     0   0
     1   1
@@ -35,6 +37,8 @@ Sample output in Python
     7   7
     8   8
     9   9
+    ------------
+
     RUNNING UNION(4, 3) 
         - Checking root for 4....
     - union() root(p) to i = 4
@@ -53,6 +57,7 @@ Sample output in Python
     7   7
     8   8
     9   9
+    
     RUNNING UNION(3, 8) 
         - Checking root for 3....
     - union() root(p) to i = 3
@@ -71,6 +76,7 @@ Sample output in Python
     7   7
     8   8
     9   9
+
     RUNNING UNION(6, 5) 
         - Checking root for 6....
     - union() root(p) to i = 6
@@ -89,6 +95,7 @@ Sample output in Python
     7   7
     8   8
     9   9
+
     RUNNING UNION(9, 4) 
         - Checking root for 9....
     - union() root(p) to i = 9
@@ -111,6 +118,7 @@ Sample output in Python
     7   7
     8   8
     9   8
+
     RUNNING UNION(2, 1) 
         - Checking root for 2....
     - union() root(p) to i = 2
@@ -129,6 +137,7 @@ Sample output in Python
     7   7
     8   8
     9   8
+
     RUNNING UNION(5, 0) 
         - Checking root for 5....
     - union() root(p) to i = 5
@@ -147,6 +156,7 @@ Sample output in Python
     7   7
     8   8
     9   8
+
     RUNNING UNION(7, 2) 
         - Checking root for 7....
     - union() root(p) to i = 7
@@ -167,6 +177,7 @@ Sample output in Python
     7   1
     8   8
     9   8
+
     RUNNING UNION(6, 1) 
         - Checking root for 6....
             - n is not id[n] ( 5 ) 
@@ -189,6 +200,7 @@ Sample output in Python
     7   1
     8   8
     9   8
+
     RUNNING UNION(7, 3) 
         - Checking root for 7....
             - n is not id[n] ( 1 ) 

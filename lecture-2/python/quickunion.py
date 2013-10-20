@@ -14,7 +14,7 @@ class QuickUnion:
         return n
     
     def union(self, p, q):
-        print "RUNNING UNION(%s, %s) " % (p, q)
+        print "\n\nRUNNING UNION(%s, %s) " % (p, q)
         i = self.__root(p)
         print "- union() root(p) to i = %s" % i
         j = self.__root(q)
