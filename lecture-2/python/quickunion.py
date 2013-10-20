@@ -18,12 +18,13 @@ class QuickUnion:
         print "\n\nRUNNING UNION(%s, %s) " % (p, q)
         print "\t- UNION() value of i becomes value of root(p)"
         i = self.__root(p)
-        j = self.__root(q)
         print "\t- UNION() value of i becomes value of root(q) %s" 
+        j = self.__root(q)
         self.id[i] = j
-
-        print "set id[i] = j" 
+        print "-------------------------------"
+        print "i = %s, j = %s -- set id[i] = j" % (i, j)
         print "set id[%s] = %s" % (i, j)
+        print "-------------------------------"
     
     def verbose(self):
         print "Index\tRoot"
