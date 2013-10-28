@@ -3,7 +3,7 @@
 #include <time.h>
 
 
-#define N 8
+#define N 1024
 
 /* Threesum brute force algorithm */
 
@@ -40,7 +40,7 @@ int main() {
     int i = 0;
     int num;
     FILE *fr;
-    fr = fopen("../8ints.txt", "r");
+    fr = fopen("../1024ints.txt", "r");
     while (fscanf(fr, "%d", &num) > 0) {
         //printf("%d\n", num);
         a[i] = num;
