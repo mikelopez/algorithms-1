@@ -13,15 +13,15 @@ int count(int *a, int* result) {
     int c = 0;
     int i, j, k;
     for (i = 0; i < N; i++) {
-        printf("i = %d\n", i);
+        printf("\n\ni = %d\n", i);
         for (j = (i+1); j < N; j++) {
-            printf("\t- j = %d\n", j);
+            printf("-- j = %d\n", j);
             for (k = (j+1); k < N; k++) {
-                printf("\t\t--- k =%d\n", k);
-                printf("\t\t\t CHECKING-INDEX %d %d %d", i, j, k);
-                printf("Values: %d, %d, %d", a[i], a[j], a[k]);
+                printf("---- k =%d\n", k);
+                printf("-------- CHECKING-INDEX %d %d %d\n", i, j, k);
+                printf("-------- Values: %d, %d, %d\n", a[i], a[j], a[k]);
                 if (a[i] + a[j] + a[k] == 0) {
-                    printf("FOUND! Increment %d + 1", c);
+                    printf("-------- FOUND! Increment %d + 1\n", c);
                     c++;
                 }
             }
