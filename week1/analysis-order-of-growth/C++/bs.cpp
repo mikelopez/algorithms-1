@@ -26,6 +26,7 @@ int main() {
     t1 = run_timer(t1);
     result = binary_search(id, &value, &result);
     t2 = run_timer(t2);
+    print_time_diff(t1, t2);
 }
 
 
