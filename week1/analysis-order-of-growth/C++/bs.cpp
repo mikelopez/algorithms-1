@@ -4,7 +4,7 @@ using namespace std;
 
 /* Demonstrating a binary search */
 
-const int N = 14;
+const int N = 1024;
 const int firsthalf = (N / 2);
 
 void build_array(int *id);
