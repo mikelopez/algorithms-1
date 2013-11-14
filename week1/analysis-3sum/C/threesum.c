@@ -1,3 +1,8 @@
+/*
+ * Given N distinct integers figures out how many triples
+ * sum to exactly zero
+ */
+
 #include <stdio.h>
 #include <stdint.h>
 #include <time.h>
